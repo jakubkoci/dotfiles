@@ -15,13 +15,6 @@
  [:editor "alt-shift-w" :editor.watch.unwatch]
  [:editor "cmd-/" :toggle-comment-selection]
  [:editor "cmd-y" :editor.select-line :editor.cut]
- [:editor "cmd-d"
-      :editor.select-line
-      :editor.copy
-      :editor.selection.clear
-      :editor.new-line-indent
-      :editor.line-start
-      :editor.paste]
 
  ;; To subtract a binding, prefix the key with '-'  e.g.
  ;;  [:app "-ctrl-shift-d" :docs.search.show]
