@@ -1,0 +1,12 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Jakub Koci 
+    email = jakub.koci@gmail.com
+[core]
+    editor = vim
+[color]
+    ui = true
+[github]
+    user = jakubkoci
+[push]
+    default = simple
