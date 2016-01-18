@@ -9,4 +9,4 @@
 [github]
     user = jakubkoci
 [push]
-    default = simple
+    default = matching
