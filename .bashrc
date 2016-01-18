@@ -5,4 +5,5 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias grep='grep --color'
 
-
+alias lt='open -a /Applications/LightTable.app'
+alias deval='eval "$(docker-machine env default)"'
