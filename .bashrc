@@ -7,3 +7,6 @@ alias grep='grep --color'
 
 alias lt='open -a /Applications/LightTable.app'
 alias deval='eval "$(docker-machine env default)"'
+
+# restart wifi
+alias wifionoff='networksetup -setairportpower airport off; networksetup -setairportpower airport on'
