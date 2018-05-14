@@ -1,0 +1,10 @@
+{ 
+    "editor.rulers": [
+        120
+    ],
+    "extensions.ignoreRecommendations": false,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "flow.enabled": false
+}
