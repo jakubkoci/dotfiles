@@ -1,9 +1,10 @@
-EditorConfig.EditorConfig
-blanu.vscode-styled-jsx
-cssho.vscode-svgviewer
-dbaeumer.vscode-eslint
+editorConfig.editorConfig
 donjayamanne.githistory
-esbenp.prettier-vscode
-flowtype.flow-for-vscode
+equimper.react-native-react-redux-snippets-for-es6-es7-version-standard
+dbaeumer.vscode-eslint
+gcazaciuc.vscode-flow-ide
+vsmobile.vscode-react-native
+blanu.vscode-styled-jsx
 jpoissonnier.vscode-styled-components
-kumar-harsh.graphql-for-vscode
+cssho.vscode-svgviewer
+esbenp.prettier-vscode

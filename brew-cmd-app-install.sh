@@ -12,28 +12,37 @@ brew upgrade
 brew install wget
 brew install tree
 
-# Install NodeJS
-brew install nvm
-mkdir ~/.nvm
-# Put this into .bash_profile
-# echo "export NVM_DIR=~/.nvm" >> ~/.bash_profile
-# echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.bash_profile
-
-# Install node
-# nvm install v4.5.0
-
 # Install fish
 brew install fish
 # append /etc/shells with /usr/local/bin/fish and run 'chsh -s /usr/local/bin/fish'
 
-# Install oh-my-fish
-# curl -L https://get.oh-my.fish | fish
-# omf install nvm
+# Install NodeJS
+brew install nvm
+mkdir ~/.nvm
 
+# Install oh-my-fish
+curl -L https://get.oh-my.fish | fish
+omf install nvm
+
+# Install Node
+nvm install v8.12.0
+
+# Install Yarn
+# If you use nvm or similar, you should exclude installing Node.js so that nvm’s version of Node.js is used.
+brew install yarn --without-node
+
+# Install React Native deps
 brew install watchman
-brew install leiningen
+npm install -g react-native-cli
+
+# Install Java
 brew cask install java
 brew install maven
+
+# Install Rust
+curl https://sh.rustup.rs -sSf | sh
+# Add following line into `config.fish`
+# set -x PATH $PATH $HOME/.cargo/bin
 
 # Remove outdated versions from the cellar
 brew cleanup

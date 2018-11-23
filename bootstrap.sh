@@ -1,35 +1,22 @@
 #!/usr/bin/env bash
 
-# Install manually from AppStore
-#   XCode
-#   Wunderlist
-#   Evernote
+# Install apps manually from AppStore
 
-# Check for Homebrew,
-# Install if we don't have it
-if test ! $(which brew); then
-  echo "Installing Homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+# Install Homebrew
+# ./brew-install.sh
 
-# brew bundle ./Brewfile
-# brew bundle ./Caskfile
-
-# Install manually
-#   IntelliJ
-#   Docker
-#   Sketch
-
-# Install NodeJS (latest LTS version)
-# nvm install v4.5.0
+# ./brew-cmd-app-install.sh OR brew bundle ./Brewfile
+# ./brew-native-app-install.sh OR brew bundle ./Caskfile
 
 # Mac OS X
 
-## show hidden files in Finder
+## Show hidden files in Finder (probably needs the restart)
 # defaults write com.apple.finder AppleShowAllFiles YES
 
+# Install other apps manually
+
 # Setup dotfiles
-# .bashrc, .bash_profile, .vimrc
+# .vimrc, ~/.config/fish/config.fish, .bashrc, .bash_profile (?),
 
 # Git configuration
 # source ./gitconfig.sh
@@ -44,7 +31,11 @@ ls -al ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "jakub.koci@gmail.com"
 
 # Start the ssh-agent in the background
-eval "$(ssh-agent -s)"
+# in bash
+# eval "$(ssh-agent -s)"
+# in fish
+eval (ssh-agent -c)
+
 
 # Add your SSH key to the ssh-agent
 ssh-add ~/.ssh/id_rsa
@@ -52,7 +43,6 @@ ssh-add ~/.ssh/id_rsa
 # Copies the contents of the id_rsa.pub file to your clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 
-# Install Google Chrome extensions
-#   Translator
-#   Evernote
-#   Pocket
+# Install browser extensions (Brave, Google Chrome)
+
+# Install Visual Code extensions
