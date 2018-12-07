@@ -36,7 +36,12 @@ brew install watchman
 npm install -g react-native-cli
 
 # Install Java
-brew cask install java
+brew cask install java # latest version
+# or specific version
+brew tap caskroom/versions
+brew search java # shows all available versions
+brew cask install java8
+# Maven
 brew install maven
 
 # Install Rust
