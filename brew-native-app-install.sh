@@ -3,8 +3,9 @@
 # Install native apps
 # Usage: `brew bundle Caskfile`
 
-# brew cask install brave-browser
-brew cask install google-chrome
+brew cask install brave-browser
+brew cask install iterm2
+# brew cask install google-chrome
 # brew cask install firefox
 brew cask install google-backup-and-sync
 # brew cask install keepassx
