@@ -9,7 +9,7 @@ brew cask install iterm2
 # brew cask install firefox
 brew cask install google-backup-and-sync
 # brew cask install keepassx
-# brew cask install flux
+brew cask install flux
 brew cask install appcleaner
 brew cask install the-unarchiver
 brew cask install visual-studio-code
