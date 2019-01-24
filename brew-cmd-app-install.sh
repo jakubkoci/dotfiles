@@ -49,5 +49,8 @@ curl https://sh.rustup.rs -sSf | sh
 # Add following line into `config.fish`
 # set -x PATH $PATH $HOME/.cargo/bin
 
+# Install Cocoapods
+brew install cocoapods
+
 # Remove outdated versions from the cellar
 brew cleanup
