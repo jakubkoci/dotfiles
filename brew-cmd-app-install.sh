@@ -34,8 +34,8 @@ mkdir ~/.nvm
 # Install Fish nvm plugin
 # omf install nvm
 
-# Install Node
-nvm install v8.12.0
+# Install Node, latest LTS
+nvm install v12.14.0
 
 # Install Yarn
 # If you use nvm or similar, you should exclude installing Node.js so that nvm’s version of Node.js is used.
