@@ -1,16 +1,6 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew
-# Usage: `brew bundle Brewfile`
-
-# Make sure we’re using the latest Homebrew
-brew update
-
-# Upgrade any already-installed formulae
-brew upgrade
-
-brew install wget
-brew install tree
+# Install Shell tools
 
 # Install zsh
 # Most versions of macOS ship zsh by default. We don't need to install, but just set it as default shell.
@@ -26,6 +16,20 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Install oh-my-fish
 # curl -L https://get.oh-my.fish | fish
+
+#######################################################################################################################
+
+# Install command-line tools using Homebrew
+# Usage: `brew bundle Brewfile`
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+brew install wget
+brew install tree
 
 # Install NodeJS
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
