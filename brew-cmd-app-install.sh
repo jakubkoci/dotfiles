@@ -28,8 +28,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # curl -L https://get.oh-my.fish | fish
 
 # Install NodeJS
-brew install nvm
-mkdir ~/.nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
 # Install Fish nvm plugin
 # omf install nvm
@@ -39,7 +38,7 @@ nvm install v12.14.0
 
 # Install Yarn
 # If you use nvm or similar, you should exclude installing Node.js so that nvm’s version of Node.js is used.
-brew install yarn --without-node
+brew install yarn
 
 # Install React Native deps
 brew install watchman
