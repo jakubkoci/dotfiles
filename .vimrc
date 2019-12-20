@@ -16,10 +16,5 @@ set autoindent
 " set $ cursor when changing word
 set cpoptions+=$
  
-" Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-"set shiftwidth=4
-"set tabstop=4
-
 " Show line numbers
 set number
