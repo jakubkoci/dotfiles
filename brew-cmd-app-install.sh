@@ -42,7 +42,6 @@ brew install yarn
 
 # Install React Native deps
 brew install watchman
-npm install -g react-native-cli
 
 # Install Java
 brew tap AdoptOpenJDK/openjdk
