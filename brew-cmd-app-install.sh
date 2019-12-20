@@ -12,17 +12,27 @@ brew upgrade
 brew install wget
 brew install tree
 
+# Install zsh
+# Most versions of macOS ship zsh by default. We don't need to install, but just set it as default shell.
+# brew install zsh
+chsh -s /bin/zsh
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Install fish
-brew install fish
+# brew install fish
 # append /etc/shells with /usr/local/bin/fish and run 'chsh -s /usr/local/bin/fish'
+
+# Install oh-my-fish
+# curl -L https://get.oh-my.fish | fish
 
 # Install NodeJS
 brew install nvm
 mkdir ~/.nvm
 
-# Install oh-my-fish
-curl -L https://get.oh-my.fish | fish
-omf install nvm
+# Install Fish nvm plugin
+# omf install nvm
 
 # Install Node
 nvm install v8.12.0
