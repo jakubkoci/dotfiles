@@ -46,11 +46,8 @@ brew install watchman
 npm install -g react-native-cli
 
 # Install Java
-brew cask install java # latest version
-# or specific version
-brew tap caskroom/versions
-brew search java # shows all available versions
-brew cask install java8
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
