@@ -55,7 +55,7 @@ brew cask install java8
 brew install maven
 
 # Install Rust
-curl https://sh.rustup.rs -sSf | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Add following line into `config.fish`
 # set -x PATH $PATH $HOME/.cargo/bin
 
