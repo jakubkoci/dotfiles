@@ -51,8 +51,6 @@ brew cask install java # latest version
 brew tap caskroom/versions
 brew search java # shows all available versions
 brew cask install java8
-# Maven
-brew install maven
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
