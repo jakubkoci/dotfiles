@@ -15,6 +15,7 @@ brew cask install the-unarchiver
 brew cask install visual-studio-code
 brew cask install docker
 brew cask install figma
+# brew cask install licecap
 brew cask install postman
 brew cask install slack
 brew cask install rocket-chat
