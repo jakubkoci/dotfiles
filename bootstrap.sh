@@ -16,7 +16,7 @@
 # Install other apps manually
 
 # Setup dotfiles
-# .vimrc, ~/.config/fish/config.fish, .bashrc, .bash_profile (?),
+# .vimrc, .bashrc, .bash_profile (?),
 
 # Git configuration
 # source ./gitconfig.sh
@@ -32,10 +32,7 @@ ssh-keygen -t rsa -b 4096 -C "jakub.koci@gmail.com"
 
 # Start the ssh-agent in the background
 # in bash
-# eval "$(ssh-agent -s)"
-# in fish
-eval (ssh-agent -c)
-
+eval "$(ssh-agent -s)"
 
 # Add your SSH key to the ssh-agent
 ssh-add ~/.ssh/id_rsa

@@ -10,13 +10,6 @@ chsh -s /bin/zsh
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Install fish
-# brew install fish
-# append /etc/shells with /usr/local/bin/fish and run 'chsh -s /usr/local/bin/fish'
-
-# Install oh-my-fish
-# curl -L https://get.oh-my.fish | fish
-
 #######################################################################################################################
 
 # Install command-line tools using Homebrew
@@ -34,9 +27,6 @@ brew install tree
 # Install NodeJS
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
-# Install Fish nvm plugin
-# omf install nvm
-
 # Install Node, latest LTS
 nvm install v12.14.0
 
@@ -53,8 +43,7 @@ brew cask install adoptopenjdk8
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# Add following line into `config.fish`
-# set -x PATH $PATH $HOME/.cargo/bin
+# Add $HOME/.cargo/bin into shell config
 
 # Install Cocoapods
 brew install cocoapods
