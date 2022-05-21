@@ -16,7 +16,8 @@
 # Install other apps manually
 
 # Setup dotfiles
-# .vimrc, .bashrc, .bash_profile (?),
+# .zshrc, .zprofile
+cp .vimrc .gitconfig ../
 
 # Git configuration
 # source ./gitconfig.sh
