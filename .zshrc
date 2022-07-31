@@ -8,6 +8,8 @@ alias wifionoff='networksetup -setairportpower airport off; networksetup -setair
 
 # Play a different sound according to the result of previously called command
 # Kudos to https://evanhahn.com/a-decade-of-dotfiles/
+# Usage: 
+# $ yarn test ; boop
 boop() {
   local last="$?"
   if [[ "$last" == '0' ]]; then
