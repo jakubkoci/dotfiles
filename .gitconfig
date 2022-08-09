@@ -16,3 +16,8 @@
     br = branch
     ci = commit
     st = status
+    l = log
+    a = add
+    aa = add --all
+[init]
+    defaultBranch = main
