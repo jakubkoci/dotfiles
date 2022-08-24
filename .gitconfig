@@ -11,6 +11,8 @@
     user = jakubkoci
 [push]
     default = matching
+[pull]
+    ff = only
 [alias]
     co = checkout
     br = branch
