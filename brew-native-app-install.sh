@@ -12,7 +12,7 @@ brew install --cask appcleaner
 brew install --cask moom
 brew install --cask visual-studio-code
 brew install --cask android-studio
-brew install --cask docker
+brew install --cask rancher
 brew install --cask figma
 brew install --cask postman
 brew install --cask slack
