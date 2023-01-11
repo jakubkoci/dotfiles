@@ -3,6 +3,11 @@
 ## Install Apps
 Install apps manually from AppStore
 
+Install oh-my-zsh
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 Install Homebrew
 ```
 ./brew-install.sh
@@ -10,7 +15,7 @@ Install Homebrew
 
 Install cmd tools and apps
 ```
-./brew-cmd-app-install.sh OR brew bundle ./Brewfile
+./brew-cmd-app-install.sh
 ```
 
 Install native apps

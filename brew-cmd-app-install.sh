@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Make sure we’re using the latest Homebrew
 brew update
 
 # Upgrade any already-installed formulae
 brew upgrade
 
-brew install wget
-brew install tree
+brew install wget tree
 
 # Install Node
 curl https://get.volta.sh | bash
@@ -26,8 +22,7 @@ brew tap homebrew/cask-versions
 brew install --cask zulu11
 
 # Install Rust
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# Add $HOME/.cargo/bin into shell config
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Remove outdated versions from the cellar
 brew cleanup
