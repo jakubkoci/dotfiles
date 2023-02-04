@@ -24,5 +24,8 @@ brew install --cask zulu11
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Install audio/video conversion tool
+brew install ffmpeg
+
 # Remove outdated versions from the cellar
 brew cleanup
