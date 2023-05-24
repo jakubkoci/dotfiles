@@ -13,6 +13,11 @@ curl https://get.volta.sh | bash
 volta install node@16.15.0
 volta install yarn
 
+# Install Node alternative
+# @see https://github.com/tj/n
+# brew install n
+# n install 18
+
 # Install React Native deps
 brew install watchman
 sudo gem install cocoapods
