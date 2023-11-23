@@ -7,6 +7,7 @@ alias deval='eval "$(docker-machine env default)"'
 alias wifionoff='networksetup -setairportpower airport off; networksetup -setairportpower airport on'
 
 alias git-update-fork="git checkout main && git fetch origin && git merge origin/main && git push fork main && git push --tags fork"
+alias dk="docker"
 
 # Play a different sound according to the result of previously called command
 # Kudos to https://evanhahn.com/a-decade-of-dotfiles/
