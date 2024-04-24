@@ -32,5 +32,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install audio/video conversion tool
 brew install ffmpeg
 
+# Install other dev tools
+brew install lazygit
+brew install neovim
+
 # Remove outdated versions from the cellar
 brew cleanup

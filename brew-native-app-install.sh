@@ -19,6 +19,7 @@ brew install --cask slack
 brew install --cask discord
 brew install --cask spotify
 brew install --cask vlc
+brew install --cask betterdisplay
 # brew install --cask the-unarchiver
 # brew cask install licecap
 
