@@ -34,6 +34,7 @@ brew install ffmpeg
 
 # Install other dev tools
 brew install lazygit
+brew install lazydocker
 brew install neovim
 
 # Remove outdated versions from the cellar

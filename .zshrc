@@ -1,6 +1,7 @@
 alias rm='rm -i'
 alias cp='cp -i'
 alias lg='lazygit'
+alias ld='lazydocker'
 
 alias deval='eval "$(docker-machine env default)"'
 
