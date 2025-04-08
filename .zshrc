@@ -27,3 +27,11 @@ boop() {
   fi
   $(exit "$last")
 }
+
+# Usage:
+# killport PORT_NUMBER
+killport() {
+  local target_port=$1
+  local pid=$(lsof -ti:"$target_port")
+  kill $pid && lsof -i :"$target_port"
+}
