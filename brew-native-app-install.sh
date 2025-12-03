@@ -3,7 +3,6 @@
 # Install native apps
 
 brew install --cask iterm2
-brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask google-chrome
 brew install --cask google-drive
@@ -15,7 +14,7 @@ brew install --cask docker-desktop
 brew install --cask visual-studio-code
 brew install --cask zed
 brew install --cask warp
-# brew install --cask android-studio
+brew install --cask android-studio
 brew install --cask figma
 brew install --cask postman
 brew install --cask slack

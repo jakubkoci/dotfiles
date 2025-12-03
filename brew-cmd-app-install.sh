@@ -6,17 +6,25 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-brew install wget tree
+# Install multiple apps with one command
+brew install wget tree n ffmpeg lazygit lazydocker neovim
+
+# Install one be one
+brew install wget
+brew install tree
 
 # Install Node
-curl https://get.volta.sh | bash
-volta install node@16.15.0
-volta install yarn
-
-# Install Node alternative
 # @see https://github.com/tj/n
-# brew install n
-# n install 18
+brew install n
+n install lts
+
+# Install audio/video conversion tool
+brew install ffmpeg
+
+# Install other dev tools
+brew install lazygit
+brew install lazydocker
+brew install neovim
 
 # Install React Native deps
 brew install watchman
@@ -28,14 +36,6 @@ brew install --cask zulu11
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Install audio/video conversion tool
-brew install ffmpeg
-
-# Install other dev tools
-brew install lazygit
-brew install lazydocker
-brew install neovim
 
 # Remove outdated versions from the cellar
 brew cleanup
