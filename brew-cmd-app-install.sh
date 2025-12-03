@@ -7,9 +7,8 @@ brew update
 brew upgrade
 
 # Install multiple apps with one command
-brew install wget tree n ffmpeg lazygit lazydocker neovim
+# brew install wget tree n oven-sh/bun/bun ffmpeg lazygit lazydocker neovim
 
-# Install one be one
 brew install wget
 brew install tree
 
@@ -17,6 +16,9 @@ brew install tree
 # @see https://github.com/tj/n
 brew install n
 n install lts
+
+# Install Bun
+brew install oven-sh/bun/bun
 
 # Install audio/video conversion tool
 brew install ffmpeg
