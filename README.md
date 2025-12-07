@@ -31,6 +31,12 @@ Install native apps
 ./brew-native-app-install.sh
 ```
 
+Install browser extensions 
+- 1Passowrd
+- Raindrop
+
+~~Install Visual Code extensions~~ Synced via GitHub account
+
 Install AI tools
 
 ```sh
@@ -39,10 +45,13 @@ brew install --cask claude-code
 ```
 
 ## Setup Mac OS X
+
 Show hidden files in Finder (probably needs the restart)
-```
+
+```sh
 defaults write com.apple.finder AppleShowAllFiles YES
 ```
+
 Install other apps manually
 
 ## Setup dotfiles
@@ -80,12 +89,13 @@ pbcopy < ~/.ssh/id_rsa.pub
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
-Install browser extensions (Brave, Google Chrome)
+## Create symlinks
 
-Install Visual Code extensions
-
+```sh
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
+```
 
 Another config examples could be find here:
-* https://github.com/jirkapenzes/dotfiles
 * https://github.com/rarous/dotfiles
 * https://github.com/danielribeiro/dotfiles
