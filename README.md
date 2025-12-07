@@ -55,24 +55,29 @@ cp .vimrc .gitconfig ../
 [GitHub: Generating SSH keys](https://help.github.com/articles/generating-ssh-keys/)
 
 Generate a new SSH keys
+
 ```sh
 ssh-keygen -t rsa -b 4096 -C ""
 ssh-keygen -t ed25519 -C ""
 ```
 
 Start the ssh-agent in the background
+
 ```sh
 eval "$(ssh-agent -s)"
 ```
 
-Add your SSH key to the ssh-agent
+Add your SSH key to the ssh-agent. It should be added automatically but if it's not you can run:
+
 ```sh
 ssh-add ~/.ssh/id_rsa
 ```
 
 Copy the contents of the id_rsa.pub file to your clipboard
+
 ```sh
 pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 Install browser extensions (Brave, Google Chrome)
