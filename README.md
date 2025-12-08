@@ -96,6 +96,22 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
 ```
 
+## Install Fonts
+
+- Nerd Fonts https://www.nerdfonts.com/font-downloads
+  - Hack: https://www.programmingfonts.org/#hack
+  - Fira: https://www.programmingfonts.org/#fira
+  - Noto: https://www.programmingfonts.org/#noto
+  - Source Code Pro: https://www.programmingfonts.org/#source-code-pro
+
+```sh
+# brew install --cask font-<FONT_NAME>-nerd-font
+brew install --cask font-hack-nerd-font
+```
+
+- Set a Nerd Font instead of default Monaco in iTerm
+
+
 Another config examples could be find here:
 * https://github.com/rarous/dotfiles
 * https://github.com/danielribeiro/dotfiles
