@@ -11,3 +11,6 @@ alias git-update-fork="git checkout main && git fetch origin && git merge origin
 
 # Restart wifi
 alias wifionoff='networksetup -setairportpower airport off; networksetup -setairportpower airport on'
+
+# Theme toggle
+alias toggle-theme="~/dotfiles/toggle-theme.sh"
