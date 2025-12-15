@@ -20,6 +20,12 @@ n install lts
 # Install Bun
 brew install oven-sh/bun/bun
 
+# Install pnpm
+brew install pnpm
+
+# Install Python tools
+brew install uv
+
 # Install audio/video conversion tool
 brew install ffmpeg
 
