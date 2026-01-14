@@ -51,3 +51,26 @@ use_frappe() {
         -e 's@^[[:space:]]*# theme = "Catppuccin Frappe"@theme = "Catppuccin Frappe"@' \
         "$conf"
 }
+
+movtomp4() {
+    if [ "$#" -ne 1 ]; then
+      echo "Usage: movtomp4 input.mov" >&2
+      return 2
+    fi
+
+    local input="$1"
+    local ext="${input##*.}"
+
+    if [ "$ext" != "mov" ] && [ "$ext" != "MOV" ]; then
+      echo "movtomp4: input must be a .mov file" >&2
+      return 2
+    fi
+
+    local output="${input%.*}.mp4"
+
+    ffmpeg -i "$input" \
+      -c:v libx264 -preset slow -crf 20 \
+      -movflags +faststart \
+      -c:a aac -b:a 128k \
+      "$output"
+}
