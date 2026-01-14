@@ -68,9 +68,14 @@ movtomp4() {
 
     local output="${input%.*}.mp4"
 
+    # -crf Constant Rate Factor
+    # Lower CRF = higher quality + bigger file
+    # Higher CRF = lower quality + smaller file
+
     ffmpeg -i "$input" \
       -c:v libx264 -preset slow -crf 20 \
       -movflags +faststart \
       -c:a aac -b:a 128k \
       "$output"
 }
+
