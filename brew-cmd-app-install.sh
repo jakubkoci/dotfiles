@@ -33,6 +33,11 @@ brew install ffmpeg
 brew install lazygit
 brew install lazydocker
 brew install neovim
+brew install awscli
+brew install kubernetes-cli
+brew install k9s
+brew install kubectx
+brew install kubens
 
 # Install React Native deps
 brew install watchman
