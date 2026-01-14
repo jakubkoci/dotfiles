@@ -89,6 +89,12 @@ pbcopy < ~/.ssh/id_rsa.pub
 pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
+Set origin url of this repository to SSH
+
+```sh
+git remote set-url origin git@github.com:jakubkoci/dotfiles.git
+```
+
 ## Create symlinks
 
 ```sh
