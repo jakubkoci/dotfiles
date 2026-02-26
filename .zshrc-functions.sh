@@ -79,3 +79,20 @@ movtomp4() {
       "$output"
 }
 
+cc-create-skill() {
+  local skill_name="$1"
+  local skill_dir="$HOME/.claude/skills/$skill_name"
+
+  mkdir -p "$skill_dir"
+
+  cat > "$skill_dir/SKILL.md" <<EOF
+---
+name: $skill_name
+description: ...
+disable-model-invocation: true
+---
+EOF
+
+  echo "Created skill '$skill_name' at $skill_dir/SKILL.md"
+}
+
