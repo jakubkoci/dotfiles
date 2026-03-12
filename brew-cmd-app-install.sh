@@ -38,6 +38,7 @@ brew install kubernetes-cli
 brew install k9s
 brew install kubectx
 brew install kubens
+brew install watch
 
 # Install React Native deps
 brew install watchman
