@@ -13,6 +13,7 @@ brew install --cask betterdisplay
 brew install --cask docker-desktop
 brew install --cask visual-studio-code
 brew install --cask zed
+brew install --cask ghostty
 # brew install --cask warp
 brew install --cask pgadmin4
 # brew install --cask android-studio

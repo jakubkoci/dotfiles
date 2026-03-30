@@ -60,6 +60,10 @@ Setup `.zshrc`, `.zprofile`
 cp .vimrc .gitconfig ../
 ```
 
+```sh
+ln -s ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty .config/config.ghostty
+```
+
 ## Setup SSH
 [GitHub: Generating SSH keys](https://help.github.com/articles/generating-ssh-keys/)
 
