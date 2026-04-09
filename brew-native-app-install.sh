@@ -16,6 +16,8 @@ brew install --cask zed
 brew install --cask ghostty
 # brew install --cask warp
 brew install --cask pgadmin4
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 # brew install --cask android-studio
 brew install --cask figma
 brew install --cask postman

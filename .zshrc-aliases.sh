@@ -5,6 +5,8 @@ alias lyd='lazydocker'
 alias dk="docker"
 alias dkc="docker-compose"
 alias pn='pnpm'
+alias tf='terraform'
+
 
 # Update fork main based on origin main
 alias git-update-fork="git checkout main && git fetch origin && git merge origin/main && git push fork main && git push --tags fork"
