@@ -2,8 +2,8 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias lyg='lazygit'
 alias lyd='lazydocker'
-alias dk="docker"
-alias dkc="docker-compose"
+alias d="docker"
+alias dc="docker-compose"
 alias pn='pnpm'
 alias tf='terraform'
 
