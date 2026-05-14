@@ -6,6 +6,8 @@ alias d="docker"
 alias dc="docker-compose"
 alias pn='pnpm'
 alias tf='terraform'
+alias c='cursor'
+alias cc='claude'
 
 
 # Update fork main based on origin main
