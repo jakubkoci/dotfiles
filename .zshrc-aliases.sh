@@ -8,6 +8,8 @@ alias pn='pnpm'
 alias tf='terraform'
 alias c='cursor'
 alias cc='claude'
+alias uuid="uuidgen"
+alias uuidl="uuidgen | tr '[:upper:]' '[:lower:]'"
 
 
 # Update fork main based on origin main
