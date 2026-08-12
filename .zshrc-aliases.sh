@@ -10,6 +10,7 @@ alias c='cursor'
 alias cc='claude'
 alias uuid="uuidgen"
 alias uuidl="uuidgen | tr '[:upper:]' '[:lower:]'"
+alias nv='nvim'
 
 
 # Update fork main based on origin main
