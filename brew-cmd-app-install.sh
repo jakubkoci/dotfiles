@@ -13,9 +13,9 @@ brew install wget
 brew install tree
 
 # Install Node
-# @see https://github.com/tj/n
-brew install n
-n install lts
+# @see https://github.com/schniz/fnm
+brew install fnm
+fnm install lts
 
 # Install Bun
 brew install oven-sh/bun/bun
