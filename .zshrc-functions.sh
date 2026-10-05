@@ -96,3 +96,33 @@ EOF
   echo "Created skill '$skill_name' at $skill_dir/SKILL.md"
 }
 
+# KUBE_DEPLOYMENT 
+# It represents a deployment name from which the function takes the pod
+#
+# It must be set in your environment:
+# - in shell config files e.g. `.zshrc`
+# - export KUBE_DEPLOYMENT=<value>
+kubepod () {
+        local ns app
+        app=${1:-$KUBE_DEPLOYMENT}
+        if [[ -z "$app" ]]; then
+                echo "APP_NAME is not set" >&2
+                return 1
+        fi
+        ns=$(kubens -c) || return 1
+        kubectl get pods -n "$ns" -l app="$app" \
+                --field-selector=status.phase=Running \
+                -o jsonpath='{.items[0].metadata.name}'
+}
+
+kubeshell () {
+        local ns pod
+        ns=$(kubens -c) || return 1
+        pod=$(kubepod "$@") || return 1
+        if [[ -z "$pod" ]]; then
+                echo "No running pod found in namespace '$ns'" >&2
+                return 1
+        fi
+        kubectl exec -it -n "$ns" "$pod" -- python manage.py shell_plus
+}
+
