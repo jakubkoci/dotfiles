@@ -1,0 +1,14 @@
+onboarding = false
+[theme]
+name = "catppuccin"
+auto_switch = true
+
+[keys]
+prefix = "ctrl+space"
+# Move between workspaces with shift+j / shift+k (vim-style).
+# Panes stay on the default h/j/k/l.
+navigate_workspace_up = "shift+k"
+navigate_workspace_down = "shift+j"
+
+[ui]
+agent_panel_sort = "priority"
