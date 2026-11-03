@@ -4,8 +4,7 @@
 
 `statusline.sh` shows:
 
-- the current repo and branch
-- the current directory
+- the repo and branch, marked `(branch)` in a normal checkout or `(worktree)` in a worktree, or the commit marked `(detached)` with no branch checked out; inside a worktree the repo is the main repo's name
 - how much of the context window is used
 - the session cost so far
 - the model
@@ -13,10 +12,10 @@
 For example:
 
 ```
-dotfiles:main | ~/dotfiles | ctx 12% | $1.23 | Opus 5.5 (1M context)
+dotfiles:main (branch) | ctx 12% | $1.23 | Opus 5.5 (1M context)
 ```
 
-Context usage is green below 40%, yellow from 40% and red from 60%.
+Outside a git repo the current directory takes the place of repo and branch. Context usage is green below 40%, yellow from 40% and red from 60%.
 
 ### Prerequisites
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Claude Code status line: repo | directory | context % | cost | model
+# Claude Code status line: repo:branch (worktree|branch) | context % | cost | model
+# Outside a git repo the directory replaces repo:branch
 input=$(cat)
 
 model=$(jq -r '.model.display_name // .model.id // "?"' <<<"$input")
@@ -17,14 +18,18 @@ pct=$(jq -r '
   | floor' <<<"$input" 2>/dev/null)
 cost=$(jq -r '.cost.total_cost_usd // empty' <<<"$input")
 
-repo=""
-if top=$(git -C "$cwd" rev-parse --show-toplevel 2>/dev/null); then
-  repo=$(basename "$top")
-  branch=$(git -C "$cwd" symbolic-ref --short -q HEAD 2>/dev/null || git -C "$cwd" rev-parse --short HEAD 2>/dev/null)
-  [ -n "$branch" ] && repo="$repo:$branch"
+repo=""; branch=""; kind=""
+if common=$(git -C "$cwd" rev-parse --path-format=absolute --git-common-dir 2>/dev/null); then
+  # The shared git dir names the main repo, also from inside a worktree
+  gitdir=$(git -C "$cwd" rev-parse --path-format=absolute --git-dir)
+  [ "$gitdir" != "$common" ] && kind="worktree" || kind="branch"
+  [ "$(basename "$common")" = ".git" ] && common=$(dirname "$common")
+  repo=$(basename "$common" .git)
+  if ! branch=$(git -C "$cwd" symbolic-ref --short -q HEAD 2>/dev/null); then
+    branch=$(git -C "$cwd" rev-parse --short HEAD 2>/dev/null)
+    kind="detached"
+  fi
 fi
-
-dir=${cwd/#$HOME/\~}
 
 # Colors
 dim=$'\033[2m'; reset=$'\033[0m'
@@ -43,7 +48,11 @@ else
 fi
 
 sep=" ${dim}|${reset} "
-out=""
-[ -n "$repo" ] && out="${cyan}${repo}${reset}${sep}"
-out+="${blue}${dir}${reset}${sep}${ctx}${sep}${cost_txt}${sep}${model}"
+if [ -n "$repo" ]; then
+  out="${cyan}${repo}:${branch:-?}${reset} ${dim}(${kind})${reset}"
+else
+  dir=${cwd/#$HOME/\~}
+  out="${blue}${dir}${reset}"
+fi
+out+="${sep}${ctx}${sep}${cost_txt}${sep}${model}"
 printf '%s' "$out"
